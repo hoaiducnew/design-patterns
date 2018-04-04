@@ -3,7 +3,7 @@ package structure.composite.menuiterator;
 import java.util.*;
   
 public class CompositeIterator implements Iterator<MenuComponent> {
-	Stack<Iterator<MenuComponent>> stack = new Stack<Iterator<MenuComponent>>();
+	Stack<Iterator<MenuComponent>> stack = new Stack<>();
    
 	public CompositeIterator(Iterator<MenuComponent> iterator) {
 		stack.push(iterator);
@@ -33,17 +33,6 @@ public class CompositeIterator implements Iterator<MenuComponent> {
 			}
 		}
 	}
-	
-	/*
-	 * No longer needed as of Java 8
-	 * 
-	 * (non-Javadoc)
-	 * @see java.util.Iterator#remove()
-	 *
-	public void remove() {
-		throw new UnsupportedOperationException();
-	}
-	*/
 }
 
 

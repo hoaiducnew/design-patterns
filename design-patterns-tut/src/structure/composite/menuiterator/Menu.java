@@ -1,11 +1,12 @@
 package structure.composite.menuiterator;
 
-import java.util.Iterator;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class Menu extends MenuComponent {
 	Iterator<MenuComponent> iterator = null;
-	ArrayList<MenuComponent> menuComponents = new ArrayList<MenuComponent>();
+	List<MenuComponent> menuComponents = new ArrayList<>();
 	String name;
 	String description;
   
